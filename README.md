@@ -1,7 +1,7 @@
 
 # Changer l'image du menu au scoll
 
-Scroller dans la page pour changer l'image du menu en bas à droite à chaque fois que le passe dans une section différente.
+Scroller dans la page pour changer l'image du menu en bas à droite à chaque fois que l'on passe dans une section différente.
 
 
 ## Icônes utilisées
