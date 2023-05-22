@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Scroll menu change</title>
+    </head>
+
+    <body>
+
+        <img id="menu" src="images/01.png">
+
+        <section id="s1"></section>
+        <section id="s2"></section>
+        <section id="s3"></section>
+        <section id="s4"></section>
+        <section id="s5"></section>
+        <section id="s6"></section>
+        <section id="s7"></section>
+        <section id="s8"></section>
+        <section id="s9"></section>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                var scrollPosition = window.scrollY;
+                var image = document.getElementById('menu');
+                var section1Position = document.getElementById('s1').offsetTop;
+                var section2Position = document.getElementById('s2').offsetTop;
+                var section3Position = document.getElementById('s3').offsetTop;
+                var section4Position = document.getElementById('s4').offsetTop;
+                var section5Position = document.getElementById('s5').offsetTop;
+                var section6Position = document.getElementById('s6').offsetTop;
+                var section7Position = document.getElementById('s7').offsetTop;
+                var section8Position = document.getElementById('s8').offsetTop;
+                var section9Position = document.getElementById('s9').offsetTop;
+
+
+                if (scrollPosition >= section1Position && scrollPosition < section2Position) {
+                    image.src = "images/02.png";
+                } else if (scrollPosition >= section2Position && scrollPosition < section3Position) {
+                    image.src = "images/03.png";
+                } else if (scrollPosition >= section3Position && scrollPosition < section4Position) {
+                    image.src = "images/04.png";
+                } else if (scrollPosition >= section4Position && scrollPosition < section5Position) {
+                    image.src = "images/05.png";
+                } else if (scrollPosition >= section5Position && scrollPosition < section6Position) {
+                    image.src = "images/06.png";
+                } else if (scrollPosition >= section6Position && scrollPosition < section7Position) {
+                    image.src = "images/07.png";
+                } else if (scrollPosition >= section7Position && scrollPosition < section8Position) {
+                    image.src = "images/08.png";
+                } else if (scrollPosition >= section8Position && scrollPosition < section9Position) {
+                    image.src = "images/09.png";
+                } else if (scrollPosition >= section9Position) {
+                    image.src = "images/09.png";
+                }
+            });
+
+        </script>
+
+    </body>
+
+</html>
