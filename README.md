@@ -1,5 +1,5 @@
 
-# Changer l'image du menu au scoll
+# Changer l'image du menu au scroll
 
 Scroller dans la page pour changer l'image du menu en bas à droite à chaque fois que l'on passe dans une section différente.
 
